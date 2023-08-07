@@ -8,7 +8,7 @@ import HeroSection from './hero-section'
 
 const Intro = () => {
   return (
-    <div className="intro-section">
+    <div className="intro-section" id='intro'>
         <div className="vector-bg" id='parallax'></div>
         <img src={cloud} className='cloud'/>
         <img src={cloudSoft} className='cloud-soft'/>

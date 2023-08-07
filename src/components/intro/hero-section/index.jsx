@@ -4,8 +4,10 @@ import {FaUser} from "react-icons/fa"
 
 import "./style.scss"
 import HandIcon from "../../../images/hand.png"
-import Photo from "../../../images/girl.png"
+import Photo from "../../../images/main copy.png"
+import { scrollToSection } from '../../utils/helper';
 import CallToAction from '../../shared/calltoaction'
+import Typewriter from './typewritter';
 
 const HeroSection = () => {
   return (
@@ -18,24 +20,25 @@ const HeroSection = () => {
                         <span className="icon">
                             <img src={HandIcon} />
                         </span>
-                        <span className="text">, I'm</span>
+                        <span className="text">, I'm Akhil, a</span>
                     </span>
-                    <span className="big-text">UI/UX Designer</span>
+                    <span className="big-text"><Typewriter /></span>
                 </h1>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum commodi, nihil praesentium totam voluptatibus adipisci.</p>
-                <CallToAction text="Contact me"/>
+                <CallToAction text="Contact me" action={()=> 
+                scrollToSection("contact")}/>
             </div>
             <div className="right-section">
                 <img src={Photo} alt="Akhil Kumar Singh" />
 
-            <div className="highlights horizontal">
+            {/* <div className="highlights horizontal">
                 <div className="icon">
                     <BsAwardFill />
                 </div>
                 <div className="text">Best Design Award</div>
-            </div> 
+            </div>  */}
 
-            <div className="highlights vertical">
+            {/* <div className="highlights vertical">
                 <div className="icon">
                     <FaUser />
                 </div>
@@ -43,7 +46,7 @@ const HeroSection = () => {
                     <span>4k+</span>
                     Happy Customers
                 </div>
-            </div>
+            </div> */}
 
             </div>
         </div>

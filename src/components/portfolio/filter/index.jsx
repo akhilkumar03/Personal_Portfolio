@@ -11,20 +11,16 @@ const filtersData = [
         id: "all",
     },
     {
-        name: "Products",
+        name: "UI/UX",
         id: "product",
     },
     {
-        name: "Web Pages",
+        name: "Front-end",
         id: "web-page",
     },
     {
-        name: "Web Apps",
+        name: "Web Flow",
         id: "web-app",
-    },
-    {
-        name: "Mobile Apps",
-        id: "mobile-app",
     },
 ]
 
